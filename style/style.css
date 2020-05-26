@@ -1,0 +1,226 @@
+:root {
+  --red-color: #eb5757;
+  --black-color: #222222;
+  --grey-color: #353535;
+  --white-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sen", sans-serif;
+}
+
+/* Announcement */
+.announcement-container {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 1em;
+}
+
+.announcement-btn {
+  color: var(--white-color);
+  background-color: var(--red-color);
+  font-size: 0.75rem;
+  padding: 0.6em 1.6em;
+  border-radius: 1em;
+  border: none;
+  margin-bottom: 1em;
+}
+
+.announcement-btn a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.announcement-title {
+  font-size: 0.9rem;
+}
+/* Header */
+header {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.7em;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-image {
+  font-size: 1.4rem;
+  margin-right: 0.5em;
+}
+
+.header-logo-title {
+  font-size: 0.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+}
+
+.header-cart-navbar {
+  display: flex;
+  align-items: center;
+}
+header .cart-icon {
+  background-color: var(--black-color);
+  padding: 0.3em 0.6em;
+  border-radius: 0.3em;
+  margin-right: 2em;
+  text-align: center;
+}
+
+.navbar {
+  display: none;
+}
+/* Cover Page */
+.coverPage-container {
+  background-image: url("hiking.jpg");
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: var(--white-color);
+  box-shadow: inset -2px -200px 209px -29px rgba(0, 0, 0, 0.4);
+}
+
+.coverPage-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2em 1em;
+}
+
+.coverPage-wrapper h1 {
+  width: 60%;
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.coverPage-wrapper p {
+  font-size: 0.7em;
+  width: 70%;
+  margin-bottom: 2em;
+  line-height: 1rem;
+}
+.coverPage-button {
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 0.5em;
+  background-color: transparent;
+  font-size: 1rem;
+  width: 8em;
+  padding: 0.4em 1em;
+}
+
+.coverPage-button:hover {
+  background-color: vaR(--white-color);
+  color: var(--black-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+/* Support */
+.support-container {
+  padding: 4rem 1rem;
+}
+
+.support-top-title {
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.support-bottom-title {
+  font-size: 2.3rem;
+  margin-bottom: 0.4em;
+}
+
+.support-title-content {
+  color: var(--grey-color);
+  margin-bottom: 2em;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.support-card-square {
+  border-radius: 0.5rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 2.3em 1em 6em 1em;
+  margin-bottom: 2em;
+}
+
+.support-card-title {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.support-card-content {
+  color: var(--grey-color);
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  margin-bottom: 3em;
+}
+
+/* Safe */
+.safe-container {
+  background-image: url(chaandersoon-L0gY-TjXhTY-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: var(--white-color);
+  min-height: 550px;
+}
+
+.safe-wrapper {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: flex-end;
+  padding: 1rem;
+  box-shadow: inset -2px -200px 209px -29px rgba(0, 0, 0, 0.9);
+}
+
+.safe-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.safe-content {
+  width: 80%;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.safe-btn {
+  border: none;
+  border-radius: 0.2rem;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  width: 80%;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+}
+
+.safe-btn:hover {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+/* Shop Products */
+/* Shop Local */
+/* Footer */
