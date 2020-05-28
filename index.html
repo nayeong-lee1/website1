@@ -16,35 +16,37 @@
   </head>
   <body>
     <div class="container">
-      <!-- Announcement -->
-      <div class="announcement-container">
-        <button class="announcement-btn"><a href="#">Announcement</a></button>
-        <h1 class="announcement-title">How we're responding to COVID-19</h1>
+      <div class="announcement-header">
+        <!-- Announcement -->
+        <div class="announcement-container">
+          <button class="announcement-btn"><a href="#">Announcement</a></button>
+          <h1 class="announcement-title">How we're responding to COVID-19</h1>
+        </div>
+        <!-- Header -->
+        <header>
+          <div class="header-logo">
+            <i class="fab fa-accusoft header-logo-image"></i>
+            <p class="header-logo-title">ACME</p>
+          </div>
+          <div class="header-cart-navbar">
+            <div class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="navbar-icon">
+              <i class="fas fa-bars"></i>
+            </div>
+            <nav class="navbar">
+              <ul>
+                <li class="home">Home</li>
+                <li class="about">About</li>
+                <li class="shop">Shop</li>
+                <li class="donate">Donate</li>
+                <li class="contact">Contact</li>
+              </ul>
+            </nav>
+          </div>
+        </header>
       </div>
-      <!-- Header -->
-      <header>
-        <div class="header-logo">
-          <i class="fab fa-accusoft header-logo-image"></i>
-          <p class="header-logo-title">ACME</p>
-        </div>
-        <div class="header-cart-navbar">
-          <div class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-          </div>
-          <div class="navbar-icon">
-            <i class="fas fa-bars"></i>
-          </div>
-          <nav class="navbar">
-            <ul>
-              <li class="home">Home</li>
-              <li class="about">About</li>
-              <li class="shop">Shop</li>
-              <li class="donate">Donate</li>
-              <li class="contact">Contact</li>
-            </ul>
-          </nav>
-        </div>
-      </header>
       <!-- Cover Page -->
       <div class="coverPage-container">
         <div class="coverPage-wrapper">
@@ -60,13 +62,17 @@
       </div>
       <!-- Support -->
       <div class="support-container">
-        <h1 class="support-top-title">Ways to support</h1>
-        <h2 class="support-bottom-title">Support ACME Outdoors.</h2>
-        <p class="support-title-content">
-          COVID-19 has forced us to close our retail space, but we need support
-          from patrons like yourself now more than ever. Below, we’ve listed the
-          best ways to help us through this season.
-        </p>
+        <div class="support-title-content-wrapper">
+          <div class="support-titles-wrapper">
+            <h1 class="support-top-title">Ways to support</h1>
+            <h2 class="support-bottom-title">Support ACME Outdoors.</h2>
+          </div>
+          <p class="support-title-content">
+            COVID-19 has forced us to close our retail space, but we need
+            support from patrons like yourself now more than ever. Below, we’ve
+            listed the best ways to help us through this season.
+          </p>
+        </div>
         <div class="support-cards-list">
           <div class="support-card">
             <div class="support-card-square">
@@ -123,75 +129,91 @@
       </div>
       <!-- Shop Products -->
       <div class="shop-container">
-        <div class="shop-top">
-          <h1>Shop Products</h1>
-          <p>Open</p>
-          <p>24/7/365</p>
+        <div class="shop-products-wrapper">
+          <div class="shop-top">
+            <h1>Shop Products</h1>
+            <div class="shop-top-p-wrapper">
+              <p>Open</p>
+              <p>24/7/365</p>
+            </div>
+          </div>
+
+          <div class="products-list">
+            <div class="product">
+              <img src="style/tent.jpg" alt="" class="produc-image" />
+              <h1 class="product-title">White Tent</h1>
+              <p class="product-price">$ 200.00 USD</p>
+              <button class="product-detail-btn">Details</button>
+            </div>
+
+            <div class="product">
+              <img src="style/cup.jpg" alt="" class="produc-image" />
+              <h1 class="product-title">Tin Coffee Tumbler</h1>
+              <p class="product-price">$ 35.00 USD</p>
+              <button class="product-detail-btn">Details</button>
+            </div>
+
+            <div class="product">
+              <img src="style/bag.jpg" alt="" class="produc-image" />
+              <h1 class="product-title">Blue Canvas Pack</h1>
+              <div class="product-prices">
+                <p class="product-price">$ 95.00 USD</p>
+                <p class="product-price-onSale">$ 145.00 USD</p>
+              </div>
+              <button class="product-detail-btn">Details</button>
+            </div>
+          </div>
+          <div class="product-see-more-wrapper">
+            <button class="product-see-more">View All Products</button>
+          </div>
         </div>
-
-        <div class="products-list">
-          <div class="product">
-            <img src="" alt="" class="produc-image" />
-            <h1 class="product-title">While Tent</h1>
-            <p class="product-price">$ 200.00 USD</p>
-            <button class="product-detail-btn">Details</button>
-          </div>
-
-          <div class="product">
-            <img src="" alt="" class="produc-image" />
-            <h1 class="product-title">Tin Coffee Tumbler</h1>
-            <p class="product-price">$ 35.00 USD</p>
-            <button class="product-detail-btn">Details</button>
-          </div>
-
-          <div class="product">
-            <img src="" alt="" class="produc-image" />
-            <h1 class="product-title">Blue Canvas Pack</h1>
-            <p class="product-price">$ 95.00 USD</p>
-            <p class="product-price-onSale">$ 145.00 USD</p>
-            <button class="product-detail-btn">Details</button>
-          </div>
-        </div>
-        <button class="product-see-more">View All Products</button>
       </div>
+      <!-- shop prodcuts ends -->
       <!-- Shop Local -->
       <div class="shop-local-container">
-        <img src="" alt="" class="shop-local-image" />
+        <div class="shop-local-image-wrapper">
+          <img src="style/cashieree.jpg" alt="" class="shop-local-image" />
+        </div>
         <div class="shop-local-box">
-          <h1 class="shop-local-title">Shop Local</h1>
-          <p class="shop-local-content">
-            We know that during COVID-19, a lot of folks around the city and
-            state are feeling uneasy about the future - we’re not sure what the
-            future holds either.
-          </p>
-          <p class="shop-local-content">
-            That said: we know that we love making sure you have the gear you
-            need for your adventures, and we’re going to keep doing that - with
-            our team - until the city tells us we can’t.
-          </p>
-          <p class="shop-local-content">
-            But as long as folks like yourself support small businesses around
-            the city, then we’ll be here — every day, making sure your orders
-            arrive on time.
-          </p>
-          <p class="shop-local-content">-------</p>
-          <p class="shop-local-content">Jane & John Doe</p>
-          <p class="shop-local-content">Acme Outdoors</p>
+          <div class="shop-local-box-wrapper">
+            <h1 class="shop-local-title">Shop Local</h1>
+            <p class="shop-local-content">
+              We know that during COVID-19, a lot of folks around the city and
+              state are feeling uneasy about the future - we’re not sure what
+              the future holds either.
+            </p>
+            <p class="shop-local-content">
+              That said: we know that we love making sure you have the gear you
+              need for your adventures, and we’re going to keep doing that -
+              with our team - until the city tells us we can’t.
+            </p>
+            <p class="shop-local-content">
+              But as long as folks like yourself support small businesses around
+              the city, then we’ll be here — every day, making sure your orders
+              arrive on time.
+            </p>
+            <p class="shop-local-content">-------</p>
+            <p class="shop-local-content">Jane & John Doe<br />Acme Outdoors</p>
+          </div>
         </div>
       </div>
       <!-- Footer -->
       <footer class="footer">
-        <div class="footer-logo">
-          <i class="fab fa-accusoft footer-logo-image"></i>
-          <p class="footer-logo-title">ACME</p>
-        </div>
-        <div class="footer-SNS">
-          <i class="fab fa-twitter-square"></i>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-instagram-square"></i>
-        </div>
-        <div class="copyright">
-          <p>Made In <a href="#">Webflow</a>. © 2020.</p>
+        <div class="footer-wrapper">
+          <div class="footer-logo-SNS">
+            <div class="footer-logo">
+              <i class="fab fa-accusoft footer-logo-image fa-2x"></i>
+              <p class="footer-logo-title">ACME</p>
+            </div>
+            <div class="footer-SNS">
+              <i class="fab fa-twitter-square fa-2x snsIcon"></i>
+              <i class="fab fa-facebook-square fa-2x snsIcon"></i>
+              <i class="fab fa-instagram-square fa-2x snsIcon"></i>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Made In <a href="#" class="webflow">Webflow</a>. © 2020.</p>
+          </div>
         </div>
       </footer>
       <!-- container closed -->
