@@ -3,6 +3,7 @@
   --black-color: #222222;
   --grey-color: #353535;
   --white-color: #ffffff;
+  --max-width: 1200px;
 }
 
 * {
@@ -85,14 +86,18 @@ header .cart-icon {
 }
 /* Cover Page */
 .coverPage-container {
-  background-image: url("hiking.jpg");
+  background-image: linear-gradient(
+      to top,
+      var(--black-color),
+      hsla(0, 0%, 13.33%, 0.18) 76%
+    ),
+    url("hiking.jpg");
   height: 550px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   color: var(--white-color);
-  box-shadow: inset -2px -200px 209px -29px rgba(0, 0, 0, 0.4);
 }
 
 .coverPage-wrapper {
@@ -178,7 +183,7 @@ header .cart-icon {
 
 /* Safe */
 .safe-container {
-  background-image: url(chaandersoon-L0gY-TjXhTY-unsplash.jpg);
+  background-image: url(village.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -705,9 +710,14 @@ header .cart-icon {
   header {
     background-color: var(--red-color);
     color: var(--white-color);
-    display: flex;
-    justify-content: space-between;
     padding: 1.7em;
+  }
+
+  .hedaer-wrapper {
+    width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .navbar-icon {
@@ -740,6 +750,18 @@ header .cart-icon {
 
   .header-logo-title {
     font-size: 1rem;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 0.5em;
+    border-radius: 15px;
+  }
+
+  .navbar a:hover {
+    background-color: var(--black-color);
+    transition: 0.5s;
   }
 
   /* Cover Page */
@@ -775,10 +797,14 @@ header .cart-icon {
   }
 
   /* Support */
-
+  .support-wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
   .support-title-content-wrapper {
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
   }
   .support-bottom-title {
     font-size: 2rem;
@@ -801,8 +827,6 @@ header .cart-icon {
     padding-right: 1rem;
     width: 37%;
   }
-
-  /* Start from here */
 
   .support-card-square {
     min-height: 330px;
@@ -861,6 +885,8 @@ header .cart-icon {
   /*Shop products */
   .shop-products-wrapper {
     text-align: left;
+    max-width: var(--max-width);
+    margin: 0 auto;
   }
 
   .shop-top-p-wrapper {
@@ -877,7 +903,7 @@ header .cart-icon {
   }
 
   .product img {
-    width: 30vw;
+    width: 20vw;
     height: 500px;
     object-fit: cover;
     margin-bottom: 1rem;

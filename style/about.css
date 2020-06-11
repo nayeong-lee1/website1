@@ -1,0 +1,809 @@
+:root {
+  --red-color: #eb5757;
+  --black-color: #222222;
+  --grey-color: #353535;
+  --white-color: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sen", sans-serif;
+}
+
+/* Announcement */
+.announcement-header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.announcement-container {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 1em;
+}
+
+.announcement-btn {
+  color: var(--white-color);
+  background-color: var(--red-color);
+  font-size: 0.75rem;
+  padding: 0.6em 1.6em;
+  border-radius: 1em;
+  border: none;
+}
+
+.announcement-btn a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.announcement-title {
+  font-size: 0.9rem;
+}
+/* Header */
+header {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.7em;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-image {
+  font-size: 1.4rem;
+  margin-right: 0.5em;
+}
+
+.header-logo-title {
+  font-size: 0.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+}
+
+.header-cart-navbar {
+  display: flex;
+  align-items: center;
+}
+header .cart-icon {
+  background-color: var(--black-color);
+  padding: 0.3em 0.6em;
+  border-radius: 0.3em;
+  margin-right: 2em;
+  text-align: center;
+}
+
+.navbar {
+  display: none;
+}
+
+/* cover page */
+.coverpage {
+  width: 100vw;
+  height: 600px;
+  background-image: linear-gradient(
+      to top,
+      var(--black-color),
+      hsla(0, 0%, 13.33%, 0.18) 76%
+    ),
+    url(village.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: var(--white-color);
+}
+
+.coverpage-button {
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  background: transparent;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
+  margin-bottom: 2em;
+  width: 150px;
+}
+
+.coverpage-button:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  transition: 1s;
+}
+.coverpage-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.coverpage-wrapper h2 {
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.coverpage-wrapper p {
+  margin-bottom: 1em;
+}
+
+/* Why-acme */
+.why-acme-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3em 0.4em;
+}
+
+.why-acme-small-title {
+  font-size: 0.8rem;
+  margin-bottom: 1em;
+}
+
+.why-acme h2 {
+  margin-bottom: 0.7em;
+}
+
+.why-acme p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+/* About */
+.about-section {
+  padding-top: 2em;
+  padding-bottom: 10em;
+}
+.about-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2em 0.4em;
+}
+.about-card i {
+  color: var(--red-color);
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.about-card h2 {
+  margin-bottom: 0.5em;
+}
+
+.about-card p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+/* meet owner */
+
+.meet-owner img {
+  width: 100%;
+  height: 350px;
+}
+
+.meet-owner-content {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 3em 2em;
+}
+
+.meet-owner-content h2 {
+  width: 70%;
+}
+
+.meet-owner-content p {
+  margin-bottom: 2em;
+  line-height: 1.3em;
+}
+
+/* Owner introduction */
+.owner-introduction {
+  padding: 2em 1em;
+}
+
+.owner-introduction .owner {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.owner img {
+  width: 100%;
+  border-radius: 40%;
+  margin-bottom: 1em;
+}
+
+.owner h2 {
+  margin-bottom: 0.6em;
+  font-weight: bolder;
+}
+
+.owner p {
+  font-size: 0.9rem;
+  line-height: 1.4em;
+  font-weight: lighter;
+}
+
+/* need help */
+
+.need-help-container {
+  width: 100vw;
+  height: 600px;
+  background-image: linear-gradient(
+      to top,
+      var(--black-color),
+      hsla(0, 0%, 13.33%, 0.18) 76%
+    ),
+    url(village.jpg);
+  background-position: center;
+  color: var(--white-color);
+}
+
+.need-help-wrapper {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 1em;
+}
+
+.need-help-wrapper h2 {
+  width: 50%;
+  margin-bottom: 0.7em;
+}
+
+.need-help-wrapper p {
+  font-size: 0.8rem;
+  margin-bottom: 1.2em;
+}
+
+.need-help-wrapper button {
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  background: transparent;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
+  margin-bottom: 2em;
+  width: 200px;
+}
+
+.need-help-wrapper button:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  transition: 1s;
+}
+/* Footer */
+
+.footer-wrapper {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo-SNS {
+  margin-bottom: 2rem;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer-logo-image {
+  margin-right: 1rem;
+}
+
+.footer-SNS {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.webflow {
+  color: var(--red-color);
+}
+
+/* Landscape */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* Announcement */
+  .announcement-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 1rem;
+  }
+
+  .announcement-btn {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.4em 1em;
+  }
+
+  .announcement-title {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  /* Header */
+  .header-logo-title {
+    font-size: 0.7rem;
+  }
+
+  /* cover page */
+
+  .coverpage-button {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    background: transparent;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 0.5em 0.5em;
+    margin-bottom: 2em;
+  }
+
+  .coverpage-button:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: 1s;
+  }
+  .coverpage-wrapper {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 20px;
+  }
+
+  .coverpage-wrapper h2 {
+    width: 100%;
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+
+  .coverpage-wrapper p {
+    line-height: 1.5rem;
+  }
+
+  /* Why-acme */
+  .why-acme {
+    padding: 3em 6em;
+  }
+
+  .why-acme p {
+    font-size: 1rem;
+  }
+
+  /* About */
+
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 1.3em;
+  }
+  .about-card i {
+    color: var(--red-color);
+    font-size: 2rem;
+    margin-bottom: 0.6em;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  /* need help */
+  .need-help-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 1em;
+  }
+
+  .need-help-wrapper h2 {
+    width: 50%;
+    font-size: 3rem;
+    margin-bottom: 0.4em;
+  }
+
+  .need-help-wrapper p {
+    font-size: 0.8rem;
+    line-height: 1.5em;
+    margin-bottom: 1.2em;
+  }
+
+  /* Footer */
+
+  .footer-wrapper {
+    padding-top: 5.5rem;
+  }
+
+  .footer-logo-SNS {
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo-image {
+    margin-right: 1rem;
+  }
+
+  .footer-SNS {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-SNS .snsIcon {
+    margin-left: 1rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Announcement */
+  .announcement-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 1rem;
+  }
+
+  .announcement-btn {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.4em 1em;
+  }
+
+  .announcement-title {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  /* Header */
+  .header-logo-title {
+    font-size: 0.7rem;
+  }
+
+  /* cover page */
+
+  .coverpage-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 20px;
+  }
+
+  .coverpage-wrapper h2 {
+    font-size: 4rem;
+    margin-bottom: 0.3em;
+  }
+
+  .coverpage-wrapper p {
+    margin-bottom: 1em;
+
+    line-height: 1.5rem;
+  }
+
+  /* Why-acme */
+  .why-acme {
+    padding: 3em 10em;
+  }
+
+  .why-acme p {
+    font-size: 1rem;
+  }
+
+  /* About */
+  .about-section {
+    padding: 2em 1em 10em 1em;
+  }
+
+  .about-cards {
+    display: flex;
+  }
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2em 0.4em;
+  }
+
+  /* owner introduction */
+  .owner-introduction {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .owner-introduction .owner {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 40%;
+  }
+
+  /* need help */
+
+  .need-help-wrapper {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 1em;
+  }
+
+  .need-help-wrapper h2 {
+    width: 50%;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .need-help-wrapper p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.2em;
+    width: 90%;
+  }
+
+  /* Footer */
+
+  .footer-wrapper {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+  }
+
+  .footer-logo-SNS {
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo-image {
+    margin-right: 1rem;
+  }
+
+  .footer-SNS {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-SNS .snsIcon {
+    margin-left: 1rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  /* Announcement */
+  .announcement-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 1rem;
+  }
+
+  .announcement-btn {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.4em 1em;
+  }
+
+  .announcement-title {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  /* Header */
+  header {
+    background-color: var(--red-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7em;
+  }
+
+  .navbar-icon {
+    display: none;
+  }
+
+  .navbar {
+    display: inline-block;
+    order: -1;
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+
+  .navbar ul li {
+    margin-right: 2.5rem;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo-image {
+    font-size: 2rem;
+  }
+
+  .header-logo-title {
+    font-size: 1rem;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 0.5em;
+    border-radius: 15px;
+  }
+
+  .navbar a:hover {
+    background-color: var(--black-color);
+    transition: 0.5s;
+  }
+
+  /* cover page */
+
+  .coverpage-wrapper {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 20px;
+  }
+
+  .coverpage-wrapper h2 {
+    width: 60%;
+    margin-bottom: 0.3em;
+    font-size: 4rem;
+  }
+
+  .coverpage-wrapper p {
+    margin-bottom: 1em;
+    width: 80%;
+    line-height: 1.5rem;
+  }
+
+  /* why acme */
+  .why-acme-wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .why-acme-wrapper p {
+    width: 70%;
+  }
+  /* About */
+  .about-section {
+    padding: 2em 1em 10em 1em;
+  }
+
+  .about-cards {
+    display: flex;
+    justify-content: space-around;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  .about-card {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2em 0.4em;
+  }
+
+  /* owner introduction */
+  .owner-introduction {
+    display: flex;
+    justify-content: space-around;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .owner-introduction .owner {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 30%;
+  }
+
+  /* need help */
+
+  .need-help-wrapper {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 1em;
+  }
+
+  .need-help-wrapper h2 {
+    width: 100%;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .need-help-wrapper p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.2em;
+    width: 80%;
+  }
+
+  /* Footer */
+
+  .footer-wrapper {
+    padding-top: 5.5rem;
+  }
+
+  .footer-logo-SNS {
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo-image {
+    margin-right: 1rem;
+  }
+
+  .footer-SNS {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-SNS .snsIcon {
+    margin-left: 1rem;
+  }
+}
