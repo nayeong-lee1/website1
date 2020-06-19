@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="style/shop.css" />
   </head>
+  <body>
     <div class="container">
       <div class="announcement-header">
         <!-- Announcement -->
@@ -25,106 +26,113 @@
         </div>
         <!-- Header -->
         <header>
-          <div class="header-logo">
-            <i class="fab fa-accusoft header-logo-image"></i>
-            <p class="header-logo-title">ACME</p>
-          </div>
-          <div class="header-cart-navbar">
-            <div class="cart-icon">
-              <i class="fas fa-shopping-cart"></i>
+          <div class="header-wrapper">
+            <div class="header-logo">
+              <a href="index.html">
+                <i class="fab fa-accusoft header-logo-image"></i>
+                <p class="header-logo-title">ACME</p>
+              </a>
             </div>
-            <div class="navbar-icon">
-              <i class="fas fa-bars"></i>
+            <div class="header-cart-navbar">
+              <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="navbar-icon">
+                <i class="fas fa-bars"></i>
+              </div>
+              <nav class="navbar">
+                <ul>
+                  <li class="home"><a href="index.html">Home </a></li>
+                  <li class="about"><a href="about.html">About </a></li>
+                  <li class="shop"><a href="shop.html">Shop </a></li>
+                  <li class="donate"><a href="donate.html">Donate </a></li>
+                  <li class="contact"><a href="contact.html">Contact </a></li>
+                </ul>
+              </nav>
             </div>
-            <nav class="navbar">
-              <ul>
-                <li class="home"><a href="index.html">Home </a></li>
-                <li class="about"><a href="about.html">About </a></li>
-                <li class="shop"><a href="shop.html">Shop </a></li>
-                <li class="donate"><a href="donate.html">Donate </a></li>
-                <li class="contact"><a href="contact.html">Contact </a></li>
-              </ul>
-            </nav>
           </div>
         </header>
-
-    </div>
-    <!-- page title -->
-    <section class="page-title">
-      <h1>Shop Our Products</h1>
-    </section>
-    <!-- featured item -->
-    <section class="featured-item">
-      <div class="featured-item-pic">
-        <div class="featured-item-description">
-          <button>Featured Item</button>
-          <h2>White Tent</h2>
-          <p>$ 200.00 USD</p>
-        </div>
       </div>
-    </section>
-    <div class="page-bottom">
-      <!-- categories -->
-      <section class="item-categories">
-        <h2>Shop by Category</h2>
-        <ul class="category-lists">
-          <li class="category-list"><a href="#">Gift Cards</a></li>
-          <li class="category-list"><a href="#">Tents</a></li>
-          <li class="category-list"><a href="#">Accessories</a></li>
-          <li class="category-list"><a href="#">Packs</a></li>
-        </ul>
+      <!-- page title -->
+      <section class="page-title">
+        <h1>Shop Our Products</h1>
       </section>
-      <!-- items -->
-      <section class="items-container">
-        <div class="card-container">
-          <img src="style/cashieree.jpg" alt="" class="item-image" />
-          <h3>Gift Card</h3>
-          <p>$ 25.00 USD</p>
-          <button>Details</button>
-        </div>
-        <div class="card-container">
-          <img src="style/cup.jpg" alt="" class="item-image" />
-          <h3>Tin Coffee Tumbler</h3>
-          <p>$ 35.00 USD</p>
-          <button>Details</button>
-        </div>
-        <div class="card-container">
-          <img src="style/bag.jpg" alt="" class="item-image" />
-          <h3>Blue Canvas Pack</h3>
-          <div class="price-container">
-            <p>$ 95.00 USD</p>
-            <p class="sale-price">$ 145.00 USD</p>
+      <!-- featured item -->
+      <section class="featured-item">
+        <div class="featured-item-pic">
+          <div class="featured-item-description">
+            <div class="featured-item-description-button-wrapper">
+              <button>Featured Item</button>
+            </div>
+            <div class="featured-item-description-h2-p-wrapper">
+              <h2>White Tent</h2>
+              <p>$ 200.00 USD</p>
+            </div>
           </div>
-
-          <button>Details</button>
-        </div>
-        <div class="card-container">
-          <img src="style/bag.jpg" alt="" class="item-image" />
-          <h3>Green Canvas Pack</h3>
-          <p>$ 125.00 USD</p>
-          <button>Details</button>
         </div>
       </section>
-    </div>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-wrapper">
-        <div class="footer-logo-SNS">
-          <div class="footer-logo">
-            <i class="fab fa-accusoft footer-logo-image fa-2x"></i>
-            <p class="footer-logo-title">ACME</p>
+      <div class="page-bottom">
+        <!-- categories -->
+        <section class="item-categories">
+          <h2>Shop by Category</h2>
+          <ul class="category-lists">
+            <li class="category-list"><a href="#">Gift Cards</a></li>
+            <li class="category-list"><a href="#">Tents</a></li>
+            <li class="category-list"><a href="#">Accessories</a></li>
+            <li class="category-list"><a href="#">Packs</a></li>
+          </ul>
+        </section>
+        <!-- items -->
+        <section class="items-container">
+          <div class="card-container">
+            <img src="style/cashieree.jpg" alt="" class="item-image" />
+            <h3>Gift Card</h3>
+            <p>$ 25.00 USD</p>
+            <button>Details</button>
           </div>
-          <div class="footer-SNS">
-            <i class="fab fa-twitter-square fa-2x snsIcon"></i>
-            <i class="fab fa-facebook-square fa-2x snsIcon"></i>
-            <i class="fab fa-instagram-square fa-2x snsIcon"></i>
+          <div class="card-container">
+            <img src="style/cup.jpg" alt="" class="item-image" />
+            <h3>Tin Coffee Tumbler</h3>
+            <p>$ 35.00 USD</p>
+            <button>Details</button>
           </div>
-        </div>
-        <div class="copyright">
-          <p>Made In <a href="#" class="webflow">Webflow</a>. © 2020.</p>
-        </div>
+          <div class="card-container">
+            <img src="style/bag.jpg" alt="" class="item-image" />
+            <h3>Blue Canvas Pack</h3>
+            <div class="price-container">
+              <p>$ 95.00 USD</p>
+              <p class="sale-price">$ 145.00 USD</p>
+            </div>
+
+            <button>Details</button>
+          </div>
+          <div class="card-container">
+            <img src="style/bag.jpg" alt="" class="item-image" />
+            <h3>Green Canvas Pack</h3>
+            <p>$ 125.00 USD</p>
+            <button>Details</button>
+          </div>
+        </section>
       </div>
-    </footer>
-  </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <div class="footer-logo-SNS">
+            <div class="footer-logo">
+              <i class="fab fa-accusoft footer-logo-image fa-2x"></i>
+              <p class="footer-logo-title">ACME</p>
+            </div>
+            <div class="footer-SNS">
+              <i class="fab fa-twitter-square fa-2x snsIcon"></i>
+              <i class="fab fa-facebook-square fa-2x snsIcon"></i>
+              <i class="fab fa-instagram-square fa-2x snsIcon"></i>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Made In <a href="#" class="webflow">Webflow</a>. © 2020.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
